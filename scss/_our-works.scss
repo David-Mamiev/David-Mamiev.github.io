@@ -1,0 +1,117 @@
+.works{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 71px;
+}
+.works-title{
+    color: $black-413;
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    padding-left: 10px;
+}
+.works-link{
+    color: $black-413;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+    text-decoration: none;
+    padding-right: 10px;
+}
+.right-link{
+    font-size: 13px;
+    color: $black-413;
+    margin-left: 5px;
+}
+.work-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.work-card{
+    width: 16.6%;
+    height: 200px;
+    border: 1px solid $gray-9f;
+    background-image: url(../img/works2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.work-card_1{
+    background-image: url(../img/works4.jpeg);
+}
+.work-card_2{
+    background-image: url(../img/works5.jpeg);
+}
+.work-card_3{
+    background-image: url(../img/works6.jpeg);
+}
+.work-card_4{
+    background-image: url(../img/works7.jpeg);
+}
+.work-card_5{
+    background-image: url(../img/works8.jpeg);
+}
+.work-card_6{
+    background-image: url(../img/works9.jpeg);
+}
+.work-card_7{
+    background-image: url(../img/works10.jpeg);
+}
+.work-card_8{
+    background-image: url(../img/works11.jpeg);
+}
+.work-card_9{
+    background-image: url(../img/works12.jpeg);
+}
+.work-card_10{
+    background-image: url(../img/works13.jpeg);
+}
+.work-card_11{
+    background-image: url(../img/works1.jpeg);
+}
+.block-button-load{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.button-load{
+    padding-right: 27px;
+    padding-left: 27px;
+}
+@media (max-width: 940px){
+    .works{
+        justify-content: space-around;
+    }
+    .work-card{
+        width: 25%;
+    }
+}
+@media (max-width: 767px){
+    .works{
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+    .works-title{
+        padding-left: 0;
+    }
+    .works-link{
+        margin-top: 25px;
+        padding-right: 0;
+    }
+    .work-card{
+        width: 50%;
+        &:nth-child(even){
+            display: none;
+        }
+    }
+    .block-button-load{
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+}

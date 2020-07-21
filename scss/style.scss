@@ -1,0 +1,24 @@
+/*
+    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+*/
+.container{
+    max-width: 941px;
+    margin: 0 auto;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    min-width: 320px;
+}
+@import 'variables.scss';
+@import 'header.scss';
+@import 'ourStory.scss';
+@import 'expertise.scss';
+@import 'team.scss';
+@import 'our-works.scss';
+@import 'quotes.scss';
+@import 'form-clients.scss';
+@import 'footer.scss';

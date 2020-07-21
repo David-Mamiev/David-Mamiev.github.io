@@ -1,0 +1,121 @@
+.mainTitleBlock{
+    &__title{
+        text-align: center;
+        margin-top: 72px;
+        color: $black-413;
+        font-family: "Playfair Display";
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.1px;
+    }
+    &__text{
+        margin-top: 16px;
+        color: $black-2f;
+        font-family: "Playfair Display";
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 1.05px;
+        text-align: center;
+        &::after{
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: $black-413;
+            margin: 18px auto 40px auto;
+            opacity: 0.3;
+        }
+    }
+}
+.cards-mainBlock1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 65px;
+}
+.card{
+    width: 33.333%;
+    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    &:nth-child(3n+3){
+        border-right: 0;
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px 0px 20px;
+    }
+    &__ikon{
+        margin-bottom: 35px;
+        &_second{
+            margin-bottom: 42px;
+        }
+    }
+    &__title{
+        color: $black-413;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        margin-bottom: 22px;
+    }
+    &__text{
+        color: $black-33;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        letter-spacing: 0.7px;
+        text-align: center;
+        margin-bottom: 37px;
+    }
+}
+@media (max-width: 940px){
+    .mainTitleBlock{
+        &__title{
+            margin-top: 60px;
+        }
+    }
+    .card{
+        width: calc(50% - 2px);
+        &:nth-child(3n+3){
+            border-right: 1px solid #ebebeb;
+        }
+        &:nth-child(even){
+            border-right: 0;
+        }
+        &__body{
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+}
+@media (max-width: 767px){
+    .mainTitleBlock{
+        &__title{
+            font-size: 21px;
+            margin-top: 45px;
+        }
+        &__text{
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+    }
+    .card{
+        width: 100%;
+        max-width: 480px;
+        border-right: 0;
+        &:nth-child(odd){
+            border-right: 0;
+        }
+        &:nth-child(even){
+            border-right: 0;
+        }
+    }
+    .cards-mainBlock1{
+        justify-content: center;
+        margin-bottom: 0;
+    }
+}

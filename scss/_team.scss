@@ -1,0 +1,121 @@
+.team{
+    width: 100%;
+    background-image: url(../img/team.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.mainTitleBlock__title_second{
+    color: #fff;
+    padding-top: 71px;
+    margin-top: 0;
+}
+.mainTitleBlock__text_second{
+    color: $white-f9;
+    &::after{
+        background-color: #655b80;
+        opacity: 1;
+        margin-bottom: 47px;
+    }
+}
+.cards-team{
+    display: flex;
+    justify-content: center;
+}
+.card-team{
+    border: 1px solid #77758b;
+    width: calc(25% - 20px);
+    margin-right: 20px;
+    &:last-child{
+        margin-right: 0;
+    }
+    &__image{
+        width: 100%;
+        height: 229px;
+        background-image: url(../img/desigher.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &__name{
+        color: #ffffff;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        margin-top: 23px;
+        text-align: center;
+    }
+    &__speciality{
+        color: #696580;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-top: 12px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+.card-team__image_second{
+    background-image: url(../img/enjeneer.jpeg);
+}
+.card-team__image_third{
+    background-image: url(../img/ceo.jpeg);
+}
+.card-team__image_fourth{
+    background-image: url(../img/marketing.jpeg);
+}
+.text-after-cards{
+    color: $white-f3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 28px;
+}
+.block-button-hiring{
+    text-align: center;
+    padding-bottom: 69px;
+}
+@media (max-width: 940px){
+    .mainTitleBlock__title_second{
+        padding-top: 60px;
+    }
+    .cards-team{
+        flex-wrap: wrap;
+    }
+    .card-team{
+        width: calc(50% - 40px);
+        max-width: 400px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        &:nth-child(even){
+            margin-right: 0;
+        }
+    }
+    .text-after-cards{
+        margin-top: 45px;
+    }
+    .block-button-hiring{
+        padding-bottom: 45px;
+    }
+}
+@media (max-width: 767px){
+    .mainTitleBlock__title_second{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .card-team{
+        width: calc(100% - 20px);
+        max-width: 385px;
+        margin-right: 0;
+    }
+    .text-after-cards{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}

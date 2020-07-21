@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEM & SCSS</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8c5f8983b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="container">
+        <div class="logo-menu">
+          <div class="logo">
+            <img src="img/logo.png" alt="" class="logo__image" />
+            <p class="logo__text">tajam</p>
+          </div>
+          <nav class="nav">
+            <ul class="nav__menu">
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link_active">home</a>
+              </li>
+              <li class="nav__item"><a href="#" class="nav__link">about</a></li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">EXPERTISE</a>
+              </li>
+              <li class="nav__item"><a href="#" class="nav__link">TEAMS</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">WORKS</a></li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">PEOPLE SAY</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="title-block-header">
+          <h1 class="title-block-header__title">
+            We Are Awesome Creative Agency
+          </h1>
+          <p class="title-block-header__text-title">
+            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+            velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+            auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+            Morbi accumsan ipsum velit.
+          </p>
+          <div class="title-block-header__block-button">
+            <a href="#" class="title-block-header__button button">
+              learn more
+            </a>
+          </div>
+        </div>
+        <div class="points">
+          <a href="#" class="points__point points__point_active"></a>
+          <a href="#" class="points__point"></a>
+          <a href="#" class="points__point"></a>
+          <a href="#" class="points__point"></a>
+        </div>
+      </section>
+    </header>
+    <main class="main">
+      <section class="container">
+        <section class="logo-story">
+          <img src="img/logo-main1.png" alt="" class="logo-ourStory" />
+          <div class="ourStory">
+            <h2 class="ourStory__title">our story</h2>
+            <p class="ourStory__text">
+              This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+              velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+              auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+              Duis sed odio sit amet nibh vulputate cursus <br />
+              <br />
+              Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor
+              a ornare odio. Sed non mauris vitae erat consequat auctor eu in
+              elit. Class aptent taciti sociosqu ad litora torquent per conubia
+              nostra, per inceptos himenaeos.
+            </p>
+            <div class="ourStory__block-button">
+              <a href="#" class="button ourStory__button">
+                learn more
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="watch-story">
+        <section class="container">
+          <div class="play">
+            <a href="#" class="watch"><i class="far fa-play-circle"></i></a>
+            <p class="text-watch">watch our story</p>
+          </div>
+        </section>
+      </section>
+      <section class="expertise">
+        <section class="container">
+          <div class="mainTitleblock">
+            <h2 class="mainTitleBlock__title">expertise</h2>
+            <p class="mainTitleBlock__text">
+              Lorem ipsum dolor sit amet proin gravida nibh vel velit
+            </p>
+          </div>
+          <div class="cards-mainBlock1">
+            <div class="card">
+              <div class="card__body">
+                <img src="img/ikon1.png" alt="" class="card__ikon" />
+                <h5 class="card__title">WEB DESIGN & DEVELOPMENT</h5>
+                <p class="card__text">
+                  This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                  vel velit auctor aliquet Aenean.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__body">
+                <img
+                  src="img/ikon2.png"
+                  alt=""
+                  class="card__ikon card__ikon_second"
+                />
+                <h5 class="card__title card__title_second">
+                  BRANDING IDENTITY
+                </h5>
+                <p class="card__text">
+                  This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                  vel velit auctor aliquet Aenean.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__body">
+                <img src="img/ikon3.png" alt="" class="card__ikon" />
+                <h5 class="card__title">MOBILE APP</h5>
+                <p class="card__text">
+                  This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                  vel velit auctor aliquet Aenean.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__body">
+                <img src="img/ikon4.png" alt="" class="card__ikon" />
+                <h5 class="card__title">SEARCH ENGINE OPTIMIZATION</h5>
+                <p class="card__text">
+                  This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                  vel velit auctor aliquet Aenean.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__body">
+                <img src="img/ikon5.png" alt="" class="card__ikon" />
+                <h5 class="card__title">GAME DEVELOPMENT</h5>
+                <p class="card__text">
+                  This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                  vel velit auctor aliquet Aenean.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__body">
+                <img src="img/ikon6.png" alt="" class="card__ikon" />
+                <h5 class="card__title">MADE WITH LOVE</h5>
+                <p class="card__text">
+                  This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                  vel velit auctor aliquet Aenean.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="team">
+        <section class="container">
+          <div class="mainTitleblock">
+            <h2 class="mainTitleBlock__title mainTitleBlock__title_second">
+              MEET OUR AMAZING TEAM
+            </h2>
+            <p class="mainTitleBlock__text mainTitleBlock__text_second">
+              Lorem ipsum dolor sit amet proin gravida nibh vel velit
+            </p>
+          </div>
+          <div class="cards-team">
+            <div class="card-team">
+              <div class="card-team__body">
+                <div class="card-team__image"></div>
+                <h6 class="card-team__name">SEMF UCUK</h6>
+                <p class="card-team__speciality">CEO & FOUNDER</p>
+              </div>
+            </div>
+            <div class="card-team">
+              <div class="card-team__body">
+                <div class="card-team__image card-team__image_second"></div>
+                <h6 class="card-team__name">DIK ADALIN</h6>
+                <p class="card-team__speciality">ENGINEERING</p>
+              </div>
+            </div>
+            <div class="card-team">
+              <div class="card-team__body">
+                <div class="card-team__image card-team__image_third"></div>
+                <h6 class="card-team__name">JENG KOL</h6>
+                <p class="card-team__speciality">DESIGNER</p>
+              </div>
+            </div>
+            <div class="card-team">
+              <div class="card-team__body">
+                <div class="card-team__image card-team__image_fourth"></div>
+                <h6 class="card-team__name">PET ROMAK</h6>
+                <p class="card-team__speciality">MARKETING</p>
+              </div>
+            </div>
+          </div>
+          <p class="text-after-cards">
+            Become part of our dream team, let’s join us !
+          </p>
+          <div class="block-button-hiring">
+            <a href="#" class="button button-hiring">
+              we are hiring
+            </a>
+          </div>
+        </section>
+      </section>
+      <section class="our-works">
+        <section class="container">
+          <div class="works">
+            <h3 class="works-title">our works</h3>
+            <a href="#" class="works-link">See All Project in dribbble<i class="fas fa-chevron-right right-link"></i></a>
+          </div>
+        </section>
+        <div class="work-cards">
+          <div class="work-card"></div>
+          <div class="work-card work-card_1"></div>
+          <div class="work-card work-card_2"></div>
+          <div class="work-card work-card_3"></div>
+          <div class="work-card work-card_4"></div>
+          <div class="work-card work-card_5"></div>
+          <div class="work-card work-card_6"></div>
+          <div class="work-card work-card_7"></div>
+          <div class="work-card work-card_8"></div>
+          <div class="work-card work-card_9"></div>
+          <div class="work-card work-card_10"></div>
+          <div class="work-card work-card_11"></div>
+        </div>
+        <section class="container">
+          <div class="block-button-load">
+            <a href="#" class="button button-load">
+              load more
+            </a>
+          </div>
+        </section>
+      </section>
+      <section class="review">
+        <section class="container">
+          <h4 class="title-quotes">“</h4>
+          <p class="text-review">
+            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+          </p>
+          <p class="name-reviewer">JANE GALADRIEL</p>
+          <p class="speciality-reviewer">CEO TENGKUREP</p>
+          <div class="reviewers">
+            <div class="reviewers__body">
+              <a href="#" class="reviewers__nextLink"><i class="fas fa-chevron-left"></i></a>
+              <a href="#" class="reviewers__reviewer"><img src="img/reviewer.png" alt=""></a>
+              <a href="#" class="reviewers__reviewer"><img src="img/reviewer2.png" alt=""></a>
+              <a href="#" class="reviewers__reviewer reviewers__reviewer_active"><img src="img/reviewer3.png" alt=""></a>
+              <a href="#" class="reviewers__reviewer"><img src="img/reviewer4.png" alt=""></a>
+              <a href="#" class="reviewers__reviewer"><img src="img/reviewer5.png" alt=""></a>
+              <a href="#" class="reviewers__nextLink"><i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </section>
+      </section>
+        <section class="container">
+          <div class="form-clients">
+            <div class="feedback">
+              <h4 class="title-feedback">GIVE US A GOOD NEWS</h4>
+              <form action="https://fom.in.ua/echo" class="form">
+                <input type="text" name="name" class="form__input" placeholder="Name">
+                <input type="email" name="email" class="form__input" placeholder="Email">
+                <input type="text" name="subject" class="form__input" placeholder="Subject">
+                <textarea name="comment"  cols="30" rows="12" class="form__input" placeholder="Your Massage"></textarea>
+                <input type="submit" value="submit" class="button form__submit">
+              </form>
+            </div>
+            <div class="our-clients">
+              <h4 class="title-feedback title-clients">OUR HAPPY CLIENT</h4>
+              <div class="clients">
+                <div class="clients__body">
+                  <div class="clients__client"><img src="img/client1.svg.png" alt=""></div>
+                  <div class="clients__client"><img src="img/client2.svg.png" alt=""></div>
+                  <div class="clients__client"><img src="img/client3.svg.png" alt=""></div>
+                  <div class="clients__client"><img src="img/client4.svg.png" alt=""></div>
+                  <div class="clients__client"><img src="img/client5.svg.png" alt=""></div>
+                  <div class="clients__client"><img src="img/client6.svg.png" alt=""></div>
+                  <div class="clients__client"><img src="img/client7.svg.png" alt=""></div>
+                  <div class="clients__client"><img src="img/client8.svg.png" alt=""></div>
+                  <div class="clients__client"><img src="img/client9.svg.png" alt=""></div>
+                  <div class="clients__client"><img src="img/client10.svg.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="footer">
+      <section class="container">
+        <div class="footer-mainBlock">
+          <div class="logo-text">
+            <div class="logo">
+              <img src="img/logo.png" alt="" class="logo__image logo__image_footer" />
+              <p class="logo__text logo__text_footer">tajam</p>
+            </div>
+            <p class="text-foot">
+              lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
+            </p>
+          </div>
+          <div class="studio-tel">
+            <h5 class="title-mainBlock">OUR STUDIO</h5>
+            <div class="ikon-text">
+              <i class="fas fa-map-marker-alt ikon-text__ikon"></i>
+              <p class="ikon-text__text">
+                Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat
+                11480 - Indonesia
+              </p>
+            </div>
+            <div class="ikon-text ikon-text_second">
+              <i class="fas fa-phone ikon-text__ikon"></i>
+              <p class="ikon-text__text">
+                (+62) 21-2224 3333
+              </p>
+            </div>
+          </div>
+          <div class="stay">
+            <h5 class="title-mainBlock">STAY IN TOUCH</h5>
+            <form action="https://fom.in.ua/echo" class="form form_footer">
+              <input type="text" name="subscribe" class="form__input form__input_footer" placeholder="Subscribe our newsletter">
+              <input type="submit" value="" class="form__sumbit form__submit_footer">
+            </form>
+            <div class="soc-links">
+              <a href="#" class="soc-links__link"><i class="fab fa-facebook-f soc-links__ikon"></i></a>
+              <a href="#" class="soc-links__link"><i class="fab fa-twitter soc-links__ikon"></i></a>
+              <a href="#" class="soc-links__link"><i class="fab fa-dribbble soc-links__ikon"></i></a>
+              <a href="#" class="soc-links__link"><i class="fab fa-instagram soc-links__ikon"></i></a>
+              <a href="#" class="soc-links__link"><i class="fab fa-google-plus-g soc-links__ikon"></i></a>
+              <a href="#" class="soc-links__link"><i class="fab fa-youtube soc-links__ikon"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-textFoot">
+          <ul class="menuFoot">
+            <li class="menuFoot__item"><a href="#" class="menuFoot__link">HELP</a></li>
+            <li class="menuFoot__item"><a href="#" class="menuFoot__link">TERMS & CONDITION</a></li>
+            <li class="menuFoot__item"><a href="#" class="menuFoot__link">PRIVACY</a></li>
+          </ul>
+          <p class="textFoot-last">Copyright © 2015 - Tajem Creative</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
