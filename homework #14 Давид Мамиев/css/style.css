@@ -1,0 +1,1043 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('../fonts/subset-ProximaNova-Semibold.eot');
+    src: url('../fonts/subset-ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-ProximaNova-Semibold.woff2') format('woff2'),
+        url('../fonts/subset-ProximaNova-Semibold.woff') format('woff'),
+        url('../fonts/subset-ProximaNova-Semibold.ttf') format('truetype'),
+        url('../fonts/subset-ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/subset-ProximaNova-Regular.eot');
+    src: url('../fonts/subset-ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/subset-ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/subset-ProximaNova-Regular.ttf') format('truetype'),
+        url('../fonts/subset-ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('../fonts/subset-ProximaNova-Light.eot');
+    src: url('../fonts/subset-ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-ProximaNova-Light.woff2') format('woff2'),
+        url('../fonts/subset-ProximaNova-Light.woff') format('woff'),
+        url('../fonts/subset-ProximaNova-Light.ttf') format('truetype'),
+        url('../fonts/subset-ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/subset-ProximaNova-Bold.eot');
+    src: url('../fonts/subset-ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/subset-ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/subset-ProximaNova-Bold.ttf') format('truetype'),
+        url('../fonts/subset-ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+body{
+    min-width: 320px;
+}
+.header{
+    background-image: url(../img/football.jpg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.bgcolor{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 3, 49, 0.9);
+}
+.container{
+    max-width: 1603px;
+    margin: 0 auto;
+}
+.logo-for{
+    padding-top: 54px;
+    display: flex;
+    justify-content: space-between;
+}
+.logotip{
+    padding-left: 10px;
+}
+.for{
+    font-family: 'Proxima Nova Rg', sans-serif;
+    margin-right: 70px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.title{
+    margin-top: 309px;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.title1{
+    font-family: 'Proxima Nova Rg';
+    font-size: 90px;
+    font-weight: 700;
+    position: relative;
+    z-index: 3;
+    letter-spacing: 4.5px;
+    padding-left: 10px;
+}
+.title2{
+    font-family: 'Proxima Nova Rg';
+    font-size: 90px;
+    font-weight: 700;
+    margin-right: 65px;
+    align-self: flex-end;
+    letter-spacing: 4.5px;
+}
+.palka{
+    position: absolute;
+    bottom: 0;
+    top: -85px;
+    left: 400px;
+    z-index: 1;
+}
+.nav{
+    float: right;
+    margin-top: 20px;
+    margin-right: 72px;
+}
+.menu{
+    display: flex;
+}
+.li{
+    margin-right: 50px;
+}
+.li:last-child{
+    margin-right: 0;
+}
+.link{
+    text-decoration: none;
+    color: #9071ea;
+    font-family: 'Proxima Nova Lt';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+.clearfix{
+    clear: both;
+}
+.two-but{
+    margin-top: 181px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 110px;
+}
+.app-store{
+    margin-right: 50px;
+    width: 311px;
+    height: 77px;
+    box-shadow: 0 16px 24px #0a0e34;
+    background-color: #5e42b0;
+    border-radius: 50px;
+    border: 1px solid #5e42b0;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+.app-store:last-child{
+    margin-right: 0;
+}
+.text-button{
+    font-family: 'Proxima Nova Lt';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-left: 36px;
+    margin-top: 5px;
+    text-align: left;
+}
+.app{
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+}
+.fab-app{
+    font-size: 45px;
+    margin-left: 50px;
+}
+.fa-apple{
+    margin-left: 40px;
+}
+.fa-google-play{
+    font-size: 40px;
+}
+.second-bt{
+    margin-top: 0;
+    margin-left: 40px;
+}
+.athlet-img{
+    margin-top: 30px;
+}
+.athlet{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.athlet-img{
+    position: absolute;
+    left: 108px;
+    top: 10px;
+}
+.athlet-text{
+    margin-right: 100px;
+    align-self: flex-end;
+}
+.title-athlets{
+    color: #e7e7e7;
+    font-family: 'Proxima Nova Rg';
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    align-self: center;
+    margin-top: 112px;
+    padding-left: 400px;
+}
+.connection{
+    margin-top: 94px;
+}
+.cifri{
+    display: inline-block;
+    vertical-align: top;
+    color: #000000;
+    font-family: 'Proxima Nova Rg';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    border-bottom: 5px solid #5e42b0;
+    border-width: 5px;
+    border-radius: 3px;
+    margin-right: 13px;
+}
+.title-card{
+    display: inline-block;
+    vertical-align: top;
+    color: #c1c1c1;
+    font-family: 'Proxima Nova Rg';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 34.49px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}
+.description-card{
+    width: 692px;
+    margin-top: 25px;
+    color: #000000;
+    font-family: 'Proxima Nova Rg';
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+.collab{
+    margin-top: 0;
+}
+.backgr{
+    width: 100%;
+    background-color: #5e42b0;
+}
+.third-cf{
+    border-color: #fff;
+}
+.third-card{
+    padding-top: 83px;
+    padding-bottom: 90px;
+}
+.third-connection{
+    margin-top: 0;
+}
+.third-desc{
+    color: #fff;
+}
+.right{
+    float: right;
+    margin-right: 100px;
+}
+.mobile-points{
+   display: none;
+}
+.player-img{
+    left: auto;
+    right: 0;
+    top: -56px;
+}
+.player-card-dn{
+    width: 587px;
+}
+.player-left{
+    float: none;
+    margin-left: 130px;
+}
+.player-bg{
+    background-color: #0a0e34;
+}
+.player-cf{
+    color: #9173e6;
+}
+.backgr2{
+    background-color: #f5f4fa;
+    margin-top: 60px;
+}
+.sec-card{
+    padding-bottom: 61px;
+    padding-top: 64px;
+}
+.player-bg2{
+    background-color: #f5f5f7;
+    margin-top: 71px;
+}
+.player-sec-cd{
+    padding-top: 63px;
+    padding-bottom: 71px;
+}
+.col-player{
+    margin-top: 0;
+}
+.title-player{
+    padding-left: 0;
+    margin-left: 130px;
+    align-self: flex-start;
+}
+.player-text{
+    align-self: flex-start;
+    margin-left: 130px;
+}
+.card{
+    display: flex;
+}
+.card__image{
+    width: 50%;
+    background-image: url(../img/kart1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card__body{
+    width: 50%;
+    position: relative;
+    max-width: 801px;
+    padding: 244px 30px 122px 127px;
+}
+.container--card{
+    max-width: 801px;
+}
+.card__numberblock{
+    display: flex;
+    width: 168px;
+    height: 155px;
+    background-color: #5e42b0;
+    position: absolute;
+    top: 211px;
+    left: -84px;
+}
+.card__number{
+    color: #f5f6f7;
+    font-family: 'Proxima Nova Rg';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    margin: auto;
+}
+.card__number::after{
+    content: "";
+    display: block;
+    width: 90%;
+    height: 5px;
+    background-color: #8e7bc8;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.card__title{
+    opacity: 0.4;
+    color: #c1c1c1;
+    font-family: 'Proxima Nova Rg';
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 90px;
+    text-transform: uppercase;
+}
+.card__description{
+    margin-top: 119px;
+    width: 420px;
+    color: #000000;
+    font-family: 'Proxima Nova Lt';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 1.2px;
+}
+.card__description::after{
+    content: "";
+    margin-top: 87px;
+    display: block;
+    width: 22px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #5e42b0;
+}
+.card--reverse{
+    flex-direction: row-reverse;
+}
+.card__second{
+    background-image: url(../img/second-img.png);
+}
+.card__numberblock--reverse{
+    left: auto;
+    right: -84px;
+}
+.card__third{
+    background-image: url(../img/shutterstock_150334202.png);
+}
+.card__body--second{
+    padding-left: 50px;
+}
+.footer{
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.logo-title__footer{
+    padding-top: 230px;
+    display: flex;
+    justify-content: center;
+}
+.text-title__footer{
+    margin-left: 35px;
+    position: relative;
+}
+.title__footer{
+    color: #ffffff;
+    font-family: 'Proxima Nova Rg';
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 90px;
+    text-transform: uppercase;
+    letter-spacing: 4.96px;
+    z-index: 3;
+    position: relative;
+}
+.title2__footer{
+    color: #a496ca;
+    font-family: 'Proxima Nova Rg';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 34.49px;
+    text-transform: uppercase;
+    margin-left: 5px;
+    position: relative;
+    z-index: 3;
+}
+.palka1__footer{
+    position: absolute;
+    top: -20px;
+    left: 24px;
+    z-index: 1;
+}
+.palka2__footer{
+    position: absolute;
+    top: -110px;
+    right: 119px;
+    z-index: 1;
+}
+.two-but__footer{
+    margin-top: 151px;
+    padding-bottom: 0;
+}
+.background__footer{
+    width: 100%;
+    background-image: url(../img/bgcfoot.png);
+    margin-top: 197px;
+}
+.last-block{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 15px 70px 15px;
+}
+.ikon__footer{
+    font-size: 26px;
+    color: #fff;
+}
+.link__footer{
+    margin-right: 35px;
+}
+.link__footer:last-child{
+    margin-right: 0;
+}
+.text__footer{
+    color: #ffffff;
+    font-family: 'Proxima Nova Rg';
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 1602px){
+    .logo-for{
+        margin: 0 auto;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1300px;
+    }
+    .logotip{
+        margin-left: 10px;
+    }
+    .for{
+        margin-right: 20px;
+    }
+    .title{
+        max-width: 1115px;
+        /*margin-left: 89px;*/
+        margin-left: 13%;
+        margin-top: 194px;
+        font-size: 64px;
+    }
+    .title1{
+        /*margin: 0 auto;*/
+        font-size: 64px;
+        width: 100%;
+        align-self: flex-start;
+    }
+    .title2{
+        margin-right: 10px;
+        margin-left: 111px;
+        font-size: 64px;
+        position: relative;
+        z-index: 3;
+    }
+    .palka{
+        left: 185px;
+        top: -58px;
+    }
+    .header{
+        background-size: cover;
+    }
+    .nav{
+        margin-top: 184px;
+        margin-right: 0;
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .menu{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+        justify-content: space-around;
+    }
+    .li{
+        margin-right: 0;
+    }
+    .link{
+        font-size: 16px;
+    }
+    .two-but{
+        margin-top: 116px;
+        padding-bottom: 91px;
+    }
+    .app-store{
+        width: 40.5%;
+        max-width: 340px;
+    }
+    .athlet-text{
+        width: 54.4%;
+        margin-right: 56px;
+        margin-top: 59px;
+    }
+    .description-card{
+        width: 100%;
+        max-width: 740px;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .connection{
+        margin-top: 0;
+    }
+    .backgr2{
+        margin-top: 73px;
+    }
+    .third-card{
+        margin-top: 0;
+        padding-top: 40px;
+        padding-bottom: 37px;
+    }
+    .right{
+        width: 54.4%;
+        margin-right: 56px;
+    }
+    .image-fb{
+        display: inline-block;
+        width: 64%;
+    }
+    .athlet-img{
+        transform: scale(1.15);
+        max-width: 550px;
+        height: 700px;
+        top: 120px;
+        left: -200px;
+    }
+    .sec-block-container{
+        max-width: 1360px;
+    }
+    .sec-card{
+        padding-top: 40px;
+        padding-bottom: 38px;
+    }
+    .athlets-firstblock{
+        overflow: hidden;
+    }
+    .player-img{
+        transform: scale(1.2);
+        left: auto;
+        height: 485px;
+        top: 62px;
+        right: -180px;
+    }
+    .player-text{
+        margin-left: 31px;
+    }
+    .player-left{
+        margin-left: 31px;
+    }
+    .player-bg2{
+        margin-top: 17px;
+    }
+    .player-sec-cd{
+        margin-top: 0;
+        padding-top: 63px;
+        padding-bottom: 70px;
+    }
+    .title-athlets{
+        padding-left: 200px;
+    }
+    .title-player{
+        padding-left: 0;
+        margin-left: 39px;
+    }
+    .player-th-cd{
+        padding-top: 52px;
+        padding-bottom: 55px;
+    }
+    .title-player{
+        margin-top: 80px;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .card__image{
+        width: 100%;
+        min-height: 584px;
+    }
+    .card__body{
+        width: 100%;
+        max-width: 1350px;
+        margin: 0 auto; 
+        padding: 82px 10px 78px 31px;
+    }
+    .card__second-reverse{
+        order: 0;
+    }
+    .card__numberblock{
+        width: 116px;
+        height: 116px;
+        top: -81px;
+        right: 0;
+        left: 33px;
+    }
+    .card__description{
+        margin-top: 36px;
+        width: 90%;
+    }
+    .card__description::after{
+        margin-top: 33px;
+    }
+    .logo-title__footer{
+        padding-top: 128px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo__footer{
+        width: 130px;
+        height: 137px;
+    }
+    .text-title__footer{
+        margin-top: 76px;
+        margin-left: 0;
+    }
+    .title__footer{
+        font-size: 80px;
+        line-height: 80px;
+        letter-spacing: 4.1px;
+        text-align: center;
+    }
+    .title2__footer{
+        margin-top: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .palka1__footer{
+        left: 15px;
+        top: -15px;
+    }
+    .palka2__footer{
+        right: 110px;
+        top: -95px;
+    }
+    .two-but__footer{
+        margin-top: 198px;
+        padding-bottom: 0;
+    }
+    .background__footer{
+        margin-top: 129px;
+    }
+    .last-block{
+        padding-top: 35px;
+        padding-bottom: 35px;
+        justify-content: center;
+    }
+    .image-footer{
+        display: none;
+    }
+    .text__footer{
+        display: none;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .for{
+        display: none;
+    }
+    .logo-for{
+        justify-content: center;
+        padding-top: 39px;
+    }
+    .logotip{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .title{
+        margin-top: 141px;
+        margin-left: 3%;
+    }
+    .title1{
+        font-size: 32px;
+        letter-spacing: 1.76px;
+        text-align: left;
+    }
+    .title2{
+        width: calc(100% - 65px);
+        font-size: 32px;
+        margin-top: 24px;
+        margin-left: 55px;
+        margin-right: 10px;
+        letter-spacing: 1.6px;
+        line-height: 40px;
+        text-align: left;
+    }
+    .palka{
+        width: 149px;
+        height: 184px;
+        left: 77px;
+        top: -32px;
+    }
+    .nav-but{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .two-but{
+        padding-bottom: 0;
+    }
+    .app-store{
+        width: 44%;
+        max-width: 165px;
+        height: 39px;
+        margin-right: 8px;
+    }
+    .app-store:last-child{
+        margin-right: 0;
+    }
+    .fab-app{
+        margin-left: 20px;
+        font-size: 22px;
+    }
+    .text-button{
+        font-size: 8px;
+        letter-spacing: 0.4px;
+        line-height: 10px;
+        margin-left: 9px;
+        text-align: left;
+    }
+    .fa-google-play{
+        font-size: 19px;
+    }
+    .fa-apple{
+        margin-left: 16px;
+    }
+    .nav{
+        margin-top: 45px;
+    }
+    .menu{
+        flex-wrap: wrap;
+        width: 81%;
+        justify-content: space-around;
+        padding-bottom: 20px;
+    }
+    .li{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .link{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .container{
+        max-width: 550px;
+    }
+    .athlet-text{
+        width: 100%;
+        float: none;
+        margin-top: 25px;
+        display: none;
+    }
+    .athlet-img{
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        transform: scale(1.15);
+        position: relative;
+        top: 38px;
+        left: 0;
+    }
+    .image-fb{
+        margin-top: 0;
+        align-self: center;
+        width: 60%;
+        max-width: 225px;
+        height: 60%;
+        max-height: 300px;
+    }
+    .title-athlets{
+        width: 65.6%;
+        font-size: 50px;
+        margin-top: 25px;
+        padding-left: 19px;
+        align-self: flex-start;
+    }
+    .cifri{
+        font-size: 15px;
+    }
+    .title-card{
+        font-size: 28px;
+    }
+    .description-card{
+        font-size: 15px;
+        letter-spacing: 0.75px;
+        margin-top: 25px;
+        line-height: 20px;
+        font-family: 'Proxima Nova Lt';
+        font-weight: 600;
+    }
+    .right{
+        float: none;
+        width: 100%;
+    }
+    .first-card{
+        display: none;
+    }
+    .backgr{
+        display: none;
+    }
+    .sec-card{
+        margin-top: 0;
+        padding-top: 81px;
+        padding-bottom: 32px;
+        padding-left: 16px;
+        padding-right: 13px;
+    }
+    .backgr2{
+        margin-top: 0;
+    }
+    .mobile-points{
+        display: block;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 27px;
+    }
+    .point{
+        width: 10px;
+        height: 10px;
+        background-color: #d8d8d8;
+        color: red;
+        margin-right: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .point:last-child{
+        margin-right: 0;
+    }
+    .point:hover{
+        background-color: #5c3caf;
+    }
+    .active{
+        background-color: #5c3caf;
+    }
+    .player-text{
+        margin-left: 0;
+    }
+    .player-img{
+        width: 100%;
+        transform: scale(1);
+        top: 32px;
+    }
+    .player-sec-cd{
+        display: none;
+    }
+    .player-bg{
+        display: block;
+        background-color: #f5f4f9;
+    }
+    .title-player{
+        padding-left: 0;
+        margin-left: 22px;
+        margin-top: 35px;
+    }
+    .player-img-bask{
+        width: 94.5%;
+        max-width: 330px;
+    }
+    .player-card-dn{
+        color: #000000;
+        padding-bottom: 41px;
+    }
+    .player-cf{
+        color: #000000;
+        border-color: #5e42b0;
+    }
+    .player-th-cd{
+        padding-bottom: 0;
+        padding-top: 81px;
+    }
+    .player-left{
+        width: 87%;
+    }
+    .card__image{
+        width: 100%;
+        min-height: 351px;
+    }
+    .card__body{
+        width: 100%;
+        max-width: 550px;
+        margin: 0 auto;
+        padding: 35px 50px 50px 18px;
+    }
+    .card__numberblock{
+        width: 70px;
+        height: 70px;
+        top: -55px;
+        right: 0;
+        left: 20px;
+    }
+    .card__number{
+        font-size: 14px;
+    }
+    .card__number::after{
+        height: 4px;
+        margin-top: -1px;
+    }
+    .card__description{
+        margin-top: 23px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.8px;
+    }
+    .card__description::after{
+        margin-top: 33px;
+    }
+    .card__title{
+        font-size: 28px;
+        line-height: 34.49px;
+    }
+    .logo-title__footer{
+        padding-top: 97px;
+    }
+    .text-title__footer{
+        margin-top: 57px;
+    }
+    .logo__footer{
+        width: 73px;
+        height: 78px;
+    }
+    .title__footer{
+        font-size: 34px;
+        font-weight: 700;
+        letter-spacing: 1.7px;
+        line-height: 36px;
+    }
+    .title2__footer{
+        color: #9b8ec1;
+        font-size: 15px;
+        letter-spacing: 0.75px;
+        line-height: 15px;
+        margin-top: 10px;
+    }
+    .palka1__footer{
+        width: 58px;
+        height: 77px;
+        top: -10px;
+        left: 3px;
+    }
+    .palka2__footer{
+        width: 95px;
+        height: 121px;
+        top: -30px;
+        right: 60px;
+    }
+    .two-but__footer{
+        margin-top: 72px;
+    }
+    .last-block{
+        padding-top: 19px;
+        padding-bottom: 14px;
+    }
+    .ikon__footer{
+        font-size: 18px;
+    }
+    .app-store__footer{
+        max-width: 160px;
+    }
+}
